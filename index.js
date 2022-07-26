@@ -4,16 +4,16 @@ const axios = require("axios");
 
 const moralisAPI = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
 
-function getFiles(length, fileType) {
+function getFiles(fileName, fileType, folderLength) {
   let promises = [];
   let ipfsArray = [];
 
-  for (let i = 0; i < length; i++) {  
+  for (let i = 0; i < folderLength; i++) {  
     promises.push(new Promise((res, rej) => {
-        fs.readFile(`./files/toolPass.${fileType}`, (err, data) => {
+        fs.readFile(`./files/${fileName}.${fileType}`, (err, data) => {
             if(err) rej();
             ipfsArray.push({
-                path: `tool-pass/metadata.json`,
+                path: `${fileName}/metadata.json`,
                 content: data.toString("base64")
             })
             res();
@@ -25,7 +25,7 @@ function getFiles(length, fileType) {
 }
 
 
-const [promises, ipfsArray] = getFiles(1, 'json')
+const [promises, ipfsArray] = getFiles('example', 'json', 1)
 
 
 Promise.all(promises).then( () => {
