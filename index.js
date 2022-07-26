@@ -1,16 +1,19 @@
-let fs = require("fs");
-let axios = require("axios");
+require('dotenv').config()
+const fs = require("fs");
+const axios = require("axios");
+
+const moralisAPI = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
 
 function getFiles(length, fileType) {
   let promises = [];
   let ipfsArray = [];
 
   for (let i = 0; i < length; i++) {  
-    promises.push(new Promise( (res, rej) => {
-        fs.readFile(`./files/${i}.${fileType}`, (err, data) => {
+    promises.push(new Promise((res, rej) => {
+        fs.readFile(`./files/toolPass.${fileType}`, (err, data) => {
             if(err) rej();
             ipfsArray.push({
-                path: `files/${i}.json`,
+                path: `tool-pass/metadata.json`,
                 content: data.toString("base64")
             })
             res();
@@ -21,15 +24,16 @@ function getFiles(length, fileType) {
   return [promises, ipfsArray]
 }
 
-const [promises, ipfsArray] = getFiles(3, 'json')
+
+const [promises, ipfsArray] = getFiles(1, 'json')
 
 
 Promise.all(promises).then( () => {
-  axios.post("https://deep-index.moralis.io/api/v2/ipfs/uploadFolder", 
+  axios.post(moralisAPI, 
       ipfsArray,
       {
           headers: {
-              "X-API-KEY": 'TzKItK148Iuo4Qot8OMwYEuYfM71oaEvlBZzBvY3Zanmd6u5NU4sVYD3HB4etvu4',
+              "X-API-KEY": process.env.API_KEY,
               "Content-Type": "application/json",
               "accept": "application/json"
           }
