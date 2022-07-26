@@ -13,10 +13,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Ipfs-Uploader</h3>
 </div>
 
@@ -51,8 +47,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 There are many great Ipfs tools available on web; however, I didn't find one that really suited my needs so I created this one.
 
@@ -145,9 +139,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@rogerh.eth](https://twitter.com/rogerhuang143)
+[@rogerh.eth](https://twitter.com/rogerhuang143)
 
-Project Link: [https://github.com/Samumu1412/ipfs_uploader](https://github.com/Samumu1412/ipfs_uploader)
+[https://github.com/Samumu1412/ipfs_uploader](https://github.com/Samumu1412/ipfs_uploader)
 
 
 
@@ -156,7 +150,7 @@ Project Link: [https://github.com/Samumu1412/ipfs_uploader](https://github.com/S
 [product-screenshot]: images/screenshot.png
 [Node.js]: https://img.shields.io/badge/node.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Node-url]: https://nodejs.org/
-[axios.js]: https://img.shields.io/badge/axios.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=black
+[axios.js]: https://img.shields.io/badge/axios.js-35495E?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Axios-url]: https://github.com/axios/axios
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
