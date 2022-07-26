@@ -1,4 +1,12 @@
 {
-  "name": "Green Pill",
-  "image": "https://ipfs.moralis.io:2053/ipfs/QmS1qJGMiENZmQSKuT1SJCo3DWPcZiaq9BrM4JMMtW47Rw/images/1.png"
+  "name": "NeoNFT-E",
+  "description": "Character E",
+  "image": "https://ipfs.moralis.io:2053/ipfs/QmUx169fFeEGwWc3wwGthoexJeAtHMWKka7RrJqHSC7TGS/files/1.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "fire"
+    }
+  ],
+  "animation_url": "https://interactive-pass.web.app/"
 }

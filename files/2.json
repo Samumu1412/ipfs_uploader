@@ -1,4 +1,12 @@
 {
-  "name": "Red Pill",
-  "image": "https://ipfs.moralis.io:2053/ipfs/QmS1qJGMiENZmQSKuT1SJCo3DWPcZiaq9BrM4JMMtW47Rw/images/2.png"
+  "name": "NeoNFT-O",
+  "description": "Character O",
+  "image": "https://ipfs.moralis.io:2053/ipfs/QmUx169fFeEGwWc3wwGthoexJeAtHMWKka7RrJqHSC7TGS/files/2.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "fire"
+    }
+  ],
+  "animation_url": "https://interactive-pass.web.app/"
 }
